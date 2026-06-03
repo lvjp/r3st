@@ -1,0 +1,18 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/r3st-core",
+    "crates/r3st-api",
+    "crates/r3st-conformance",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.96"
+license = "MIT"
+repository = "https://github.com/lvjp/r3st"
+authors = ["Laurent VERDOÏA"]
+
+[workspace.dependencies]
+r3st-core = { path = "crates/r3st-core" }
