@@ -1,16 +1,11 @@
 //! Shared library for the r3st binaries.
 
-/// Return a greeting for the given component name.
-pub fn greeting(component: &str) -> String {
-    format!("Hello from {component}!")
-}
+//! This crate intentionally stays transport-agnostic: it models the S3 data
+//! types and error format so that both the server (which produces them) and the
+//! conformance runner (which asserts on them) can speak the same language.
 
-#[cfg(test)]
-mod tests {
-    use super::*;
+pub mod error;
+pub mod model;
 
-    #[test]
-    fn greeting_includes_component() {
-        assert_eq!(greeting("server"), "Hello from server!");
-    }
-}
+pub use error::{S3Error, S3ErrorCode};
+pub use model::{Bucket, ListAllMyBucketsResult, Owner};

@@ -14,3 +14,11 @@ path = "src/main.rs"
 
 [dependencies]
 r3st-core.workspace = true
+tokio.workspace = true
+axum.workspace = true
+anyhow.workspace = true
+serde.workspace = true
+quick-xml.workspace = true
+clap.workspace = true
+tracing.workspace = true
+tracing-subscriber.workspace = true
