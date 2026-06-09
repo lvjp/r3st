@@ -3,19 +3,5 @@
 version = 4
 
 [[package]]
-name = "r3st-api"
-version = "0.1.0"
-dependencies = [
- "r3st-core",
-]
-
-[[package]]
-name = "r3st-conformance"
-version = "0.1.0"
-dependencies = [
- "r3st-core",
-]
-
-[[package]]
-name = "r3st-core"
+name = "r3st"
 version = "0.1.0"
