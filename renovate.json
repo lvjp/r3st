@@ -4,7 +4,9 @@
     "config:best-practices",
     ":disableRateLimiting"
   ],
-  "dependencyDashboard": false,
+  "dependencyDashboard": {
+    "enabled": false
+  },
   "rebaseWhen": "behind-base-branch",
   "timezone": "Europe/Paris"
 }
